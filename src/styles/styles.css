@@ -12,11 +12,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #a904bf;
+  padding: 0 25px 0 25px;
 }
 
 .Header a {
   text-decoration: none;
-  color: #15302C;
+  color: #1ed9b7;
 }
 
 .Main {
@@ -24,6 +26,7 @@ body {
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+  
 }
 
 .Characters {
@@ -38,11 +41,13 @@ body {
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
+  margin-top: 10px;
 }
 
 .Characters-card {
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  background-color: #f2b749;
   border-radius: 5px;
   margin: 0 0 20px 0;
   display: block;
@@ -119,4 +124,32 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 980px) {
+	.Characters {
+		grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .Content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+	.Characters {
+		grid-template-columns: 1fr;
+	}
+
+	.Characters-inner {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		grid-row-gap: 0;
+    }
+    
+    .Content {
+        display: flex;
+        justify-content: center;
+    }
 }
