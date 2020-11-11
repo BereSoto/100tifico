@@ -166,7 +166,17 @@ body {
   color: black;
   margin-top: 100px;
 }
-
+.error{
+  color:#88E92E;
+  font-size:100px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+h3{
+  color: #88E92E;
+  text-align: center;
+}
+/*
 .morty{
   position: absolute;
   width:500px;
@@ -319,14 +329,7 @@ border: 2px solid ;
   transform:rotatez(20deg);
 }
 
-.error{
-  color:#88E92E;
-  font-size:100px;
-  font-family: 'Roboto', sans-serif;
-}
-h3{
-  color: #88E92E;
-}
+
 
 @media screen and (max-width: 740px) {
   
@@ -355,3 +358,4 @@ h3{
     transform:translatex(-20px);
   }
 }
+*/
